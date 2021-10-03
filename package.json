@@ -1,0 +1,18 @@
+{
+  "name": "custom-data-smart-contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "solana-json.js",
+  "scripts": {
+    "deploy": "node solana-deploy.js",
+    "build:program": "cargo build-bpf --manifest-path=./program/Cargo.toml --bpf-out-dir=dist/program",
+    "test:program": "cargo test-bpf --manifest-path=./program/Cargo.toml",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prince Anuragi",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/web3.js": "^1.29.2",
+    "borsh": "^0.6.0"
+  }
+}
